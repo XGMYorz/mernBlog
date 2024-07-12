@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+/* code { */
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+/* } */
+
+
+/* Blog Navbar */
+li{
+  list-style: none;
+}
+a{
+  color: white;
+}
+/* 顶部导航栏位 */
+#topNavt {
+  position: fixed;
+  /* position: absolute; */
+  top: 0;
+  width: 100%;
+  height: 100px;
+  /* transition: all 0.4s; */
+  z-index: 250;
+  /* background-color: white; */
+}
+
+#topNavt #topNavts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* visibility: hidden; */
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  top: 0;
+  background-color: #09090969;
+  
+  box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.507);
+  backdrop-filter: blur(6px);
+  /* transform: translateX(-100%);  */
+  /* 初始状态：向左偏移隐藏 */
+  /* transition: transform 0.5s ease, visibility 0.5s ease, background-color 0.5s ease;  */
+  /* 添加过渡效果 */
+}
+
+/* I */
+#topNavtsUser{
+  position: absolute;
+  left: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#topNavtsUser a{
+  padding: 0 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#topNavtsUser div{
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#topNavtsUser img{
+  width: 85%;
+  height: 85%;
+}
+
+/* II */
+#topNavtsA{
+  position: absolute;
+  right: 325px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#topNavtsA>a{
+  padding: 4px 12px;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  /* font-weight: bolder; */
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#topNavtsA>a:hover{
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+
+#topNavtsA a.active{
+  background: white;
+  border-radius: 15px;
+  color: black;
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+
+/* III */
+#topNavtsIco{
+  position: absolute;
+  right: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#topNavtsIco button{
+  margin: 0 5px;
+  border: 0px solid black;
+  background-color: black;
+  backdrop-filter: blur(3px);
+
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.601);
+  border-radius: 14px;
+  transition: all 0.3s;
+
+  color: white;
+}
+
+#topNavtsIco button:hover{
+  background-color: rgba(255, 255, 255, 0.612);
+  transition: all 0.3;
+}
+

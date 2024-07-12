@@ -1,0 +1,1025 @@
+#BackendImg{
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;   
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#BackendImg img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/jfcq.png);
+    background-size: cover;
+    z-index: -50;
+}
+
+/* 嵌套组件统一格式 */
+#Back{
+    width: 100%;
+    display: block;
+    /* background-color: #090909; */
+    min-height: 86.8vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 100px;
+    /* backdrop-filter: blur(3px); */
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    overflow-y: scroll;
+    scrollbar-width: none; 
+
+} 
+&::-webkit-scrollbar{
+    width: 0px;
+}
+
+#BackBox{
+    width: 1230px;
+}
+
+
+/* 组件页头部提示 */
+#head-prompt{
+    /* position: absolute; */
+    position: fixed;
+    top: 22px;
+    font-size: 16px;
+    z-index: 250;
+}
+#head-prompt a{
+    color: rgba(255, 255, 255, 0.593);
+}
+
+
+/* 博客组件页 */
+#BackC-Box{
+    width: 100%;
+}
+
+
+/* BackA 首页组件页 */
+#BackA-Box{
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+#BackA-Box button{
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin: 8px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+#BackA-Box button:hover{
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+#BackA-Box video{
+    width: 400px;
+    border-radius: 18px;
+}
+
+/* #BackA-Box div:nth-child(3){
+    margin-top: 100px;
+    width: 400px;
+    height: 100px;
+    background-color: white;
+} */
+
+/* BackB 统计组件页 */
+#BackB-Box{
+    top: 0;
+    width: 100%;
+    height: 180px;
+    /* border: 1px solid white; */
+    justify-content: center;
+    
+}
+
+#BackB-Box>li{
+    position: relative;
+    margin: 0 5px;
+    display: inline-block;
+    width: 294px;
+    height: 100%;
+
+    border-radius: 8px;
+
+    background-color: rgba(0, 0, 0, 0.69);
+    backdrop-filter: blur(5px);
+    box-shadow:  1px 1px 2px 0 rgba(0, 0, 0, 0.655);
+    /* border: 2px solid rgba(255, 255, 255, 0.43); */
+    
+}
+#BackB-Box>li>li:first-child{
+    margin: 40px 0 0 20px;
+    font-size: 18px;
+}
+#BackB-Box>li>li:nth-child(2){
+    margin: 20px 0 0 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.747);
+}
+
+
+#BackB-Box img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 5px;
+    top: 40px;
+    right: 20px;
+}
+
+/* BackC、B、D head标签 */
+#Back-head{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#Back-head input{
+    padding: 12px;
+    margin-right: 8px;
+
+    width: 320px;
+    height: 38px;
+
+    border-radius: 12px;
+    border: 0px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.773);
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.547);
+
+}
+
+#Back-head button{
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 12px;
+    margin: 0 6px;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.547);
+}
+#Back-head button img{
+    width: 16px;
+}
+#Back-head button:hover{
+    color: white;
+    background-color: rgb(77, 77, 77);
+    backdrop-filter: blur(6px);
+    border: 1px solid white;
+}
+
+/* 标签数据 */
+#Back-center{ 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Back-center span{
+    cursor: pointer;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: 1px 1px 1px 0 rgba(21, 21, 21, 0.550);
+    border-radius: 12px;
+    /* padding: 8px 14px; */
+    padding: 8px 34px 8px 14px;
+    margin: 6px;
+    font-size: 16px;
+
+    transition: all 0.3s;
+}
+#Back-center img{
+   position: absolute;
+   margin-left: 6px;
+   width: 20px;
+   border-radius: 4px;
+}
+#Back-center span:hover{
+    color: black;
+    
+    background-color: rgba(255, 255, 255, 0.685);
+    transform: all 0.3s;
+}
+
+/* BackC and BackD big box */
+#Back-bottom{
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 12px;
+    /* box-shadow: 0 0 1px 0 white; */
+
+}
+#Back-bottom>div:nth-child(1){ /* 标题区 */
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 14px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.442);
+    /* background-color: rgba(255, 255, 255, 0.019); */
+    backdrop-filter: blur(6px);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+#Back-bottom>div:nth-child(1) span{
+    margin: 12px 0;
+    font-size: 18px;
+}
+#Back-bottom>div:nth-child(1) span:nth-child(1){
+    margin-left: 10px;
+}
+#Back-bottom>div:nth-child(1) span:nth-child(2){
+    margin-left: 195px;
+}
+#Back-bottom>div:nth-child(1) span:nth-child(3){
+    margin-left:65px
+}
+#Back-bottom>div:nth-child(1) span:nth-child(4){
+    margin-left:70px
+}
+#Back-bottom>div:nth-child(1) span:nth-child(5){
+    margin-left:15px
+}
+#Back-bottom>div:nth-child(1) span:nth-child(6){
+    margin-left:75px
+}
+
+/* 添加样式 */
+.active {
+    background-color: white;
+}
+
+.parent-active {
+    /* 当父元素包含active类时应用的样式 */
+    background-color: lightgray;
+}
+
+
+/* 博客 and 标签 数据区样式 */
+.Back-bottom-content{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.158); */
+    margin: 8px 0;
+    border-radius: 14px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.442);
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+}
+.Back-bottom-content:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.211);
+}
+.Back-bottom-content div{
+    /* background-color: white; */
+    margin: 5px 2px 0 2px;
+    /* font-size: 18px; */
+}
+.Back-bottom-content div:nth-child(1){
+    margin: 5px 2px 0 2px;
+    width: 300px;
+
+    font-size: 16px;
+}
+.Back-bottom-content div:nth-child(2){
+    width: 150px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.Back-bottom-content div:nth-child(3){
+    width: 150px;
+}
+.Back-bottom-content div:nth-child(3) span{
+    font-size: 15px;
+    font-weight: bold;
+    /* border: 2px solid white; */
+    color: #090909;
+    background-color: white;
+    border-radius: 18px;
+    padding: 2px 8px;
+}
+.Back-bottom-content div:nth-child(4){
+    width: 100px;
+}
+.Back-bottom-content div:nth-child(5){
+    width: 175px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.751);
+}
+.Back-bottom-content div:nth-child(6){
+    width: 175px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.751);
+}
+.Back-bottom-content div:nth-child(7){
+    width: 175px;
+    margin: 0 3px 0 2px;
+    display: flex;
+    justify-content: center;
+}
+.Back-bottom-content div:nth-child(7) button{
+    cursor: pointer;
+    box-shadow: 0 0 1px 0 rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.847);
+    margin: 0 6px;
+    border-radius: 12px;
+    border: 0px;
+    width: 36px;
+    height: 36px;
+
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Back-bottom-content div:nth-child(7) button:hover{
+    background-color: rgb(135, 135, 135);
+    transition: 0.3s;
+}
+.Back-bottom-content div:nth-child(7) button img{
+    width: 16px;
+}
+/* BackE 笔记区域内容 */
+#BackE-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#BackE-content>div{
+    font-size: 25px;
+    width: 543px;
+    margin: 15px 15px;
+    padding: 20px 20px;
+    /* padding: 23px; */
+    min-height: 280px;
+    flex: 0 0 543px; /*占用比例 可收缩/不可 初始尺寸*/
+    /* border: 1px solid white; */
+    border-radius: 18px;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+#BackE-content>div div:nth-child(1){
+    width: 100%;
+    height: 40px;
+  
+}
+#BackE-content>div div:nth-child(1) a{
+    font-size: 18px;
+    font-weight: bold;
+}
+#BackE-content>div div:nth-child(1) button{
+   cursor: pointer;
+   float: right;
+   padding: 8px;
+   width: 36px;
+   height: 36px;
+   border-radius: 12px;
+   border: 1px solid rgba(255, 255, 255, 0);
+   box-shadow:  0 0 1px 0 white;
+   background-color: black;
+   color: white;
+   margin: 0 5px;
+   transition: all 0.3s;
+}
+#BackE-content>div div:nth-child(1) button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);    
+    transition: all 0.3s;
+
+}
+#BackE-content>div div:nth-child(1) button img{
+    width: 16px;
+}
+
+#BackE-content>div div:nth-child(2){
+    margin-top: 20px;
+    width: 100%;
+    min-height: 160px;
+    font-size: 16px;
+    /* color: white; */
+    /* background-color: white; */
+}
+#BackE-content>div div:nth-child(3){
+    margin-top: 10px;
+    width: 100%;
+    /* background-color: white; */
+    /* color: white; */
+}
+#BackE-content>div div:nth-child(3) button{
+    /* margin-left: 480px; */
+    float: right;
+    border: 0;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 3px 12px;
+}
+
+#BackE-content>div div:nth-child(4){
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    /* background-color: white; */
+    /* color: white; */
+}
+#BackE-content>div div:nth-child(4) a{
+    float: right;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.788);
+    /* background-color: white; */
+    /* color: white; */
+}
+
+/* BackE 创建笔记窗口 */
+#NoteCreate{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+}
+#NoteCreates{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */ 
+}
+#NoteCreateBox{
+    position: absolute;
+    background-color: rgb(4, 4, 4);
+    margin-top: -90px;
+    width: 520px;
+    height: 708px;
+    border-radius: 12px;
+    box-shadow:  0 0 2px 0 rgba(255, 255, 255, 0.671);
+    padding: 20px 26px;
+}
+#NoteCreateBox>div:nth-child(1)>a:nth-child(1){
+    font-size: 17px;
+    font-weight: bolder;
+}
+#NoteCreateBox>div:nth-child(1)>a:nth-child(2){
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+#NoteCreateBox>div:nth-child(2)>div:nth-child(1){
+    margin-top: 20px;
+}
+#NoteCreateBox>div:nth-child(2)>div:nth-child(1) a{
+    font-size: 15px;
+    margin-right: 10px;
+}
+#NoteCreateBox>div:nth-child(2)>div:nth-child(1) select{
+    width: 300px;
+    height: 28px;
+    border-radius: 8px;
+    background-color: rgb(4, 4, 4);
+    color: white;
+    border: 0px;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.652);
+    padding: 0 10px;
+    scrollbar-color: #ffffff88 rgb(0, 0, 0)
+}
+
+#NoteCreateBox>div:nth-child(2) >div:nth-child(2){
+    margin-top: 20px;
+}
+#NoteCreateBox>div:nth-child(2) a{
+    font-size: 15px;
+}
+#NoteCreateBox>div:nth-child(2) input{
+    width: 500px;
+    padding: 0 10px;
+    border-radius: 8px;
+    height: 32px;
+    color: white;
+    background-color: rgb(4, 4, 4);
+    border: 0px;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.652);
+}
+#NoteCreateBox>div:nth-child(2)>div:nth-child(4)
+{
+    margin-top: 20px;
+}
+#NoteCreateBox>div:nth-child(2) textarea{
+    resize: none;
+    padding: 10px;
+    width: 500px;
+    height: 380px;
+
+    color: white;
+    background-color: rgb(4, 4, 4);
+    font-size: 16px;
+    border: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.652);
+
+    scrollbar-color: #ffffff88 rgb(0, 0, 0)
+}
+#NoteCreateBox>div:nth-child(2) textarea p{
+    color: white;
+}
+#NoteCreateBox>div:nth-child(2)>div:nth-child(6){
+    font-size: 14px;
+}
+#NoteCreateBox>div:nth-child(2)>div:nth-child(7){
+    margin-top: 10px;
+}
+#NoteCreateBox>div:nth-child(2) button{
+    padding: 10px 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    border: 0px;
+    border-radius: 12px;
+    float: right;
+}
+#NoteCreateBox>div:nth-child(2) button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 1px 0 white;
+}
+
+/* BackF 标签页内容 */
+#Back-head select{
+    padding: 0 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 320px;
+    height: 38px;
+    border-radius: 12px;
+    border: 0px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.567);
+    background-color: rgba(0, 0, 0, 0.853);
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.547);
+
+}
+
+#BackF-bottom{
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 12px;   
+}
+#BackF-bottom>div:nth-child(1){ 
+    width: 100%;
+    padding: 10px 0;
+    /* background-color: rgba(255, 255, 255, 0.364); */
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.442);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+#BackF-bottom>div:nth-child(1) span{
+    margin: 12px 0;
+    font-size: 18px;
+}
+#BackF-bottom>div:nth-child(1) span:nth-child(1){
+    margin-left: 5px;
+}
+#BackF-bottom>div:nth-child(1) span:nth-child(2){
+    margin-left: 80px;
+}
+#BackF-bottom>div:nth-child(1) span:nth-child(3){
+    margin-left: 80px;
+}
+#BackF-bottom>div:nth-child(1) span:nth-child(4){
+    margin-left: 80px;
+}
+#BackF-bottom>div:nth-child(1) span:nth-child(5){
+    margin-left: 80px;
+}
+#BackF-bottom>div:nth-child(1) span:nth-child(6){
+    margin-left: 80px;
+}
+#BackF-bottom>div:nth-child(1) span:nth-child(7){
+    margin-left: 90px;
+}
+#BackF-bottom>div:nth-child(1) span:nth-child(8){
+    margin-left: 100px;
+}
+
+.BackF-content{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+
+    background-color: rgba(0, 0, 0, 0.619);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.581);
+}
+.BackF-content div{
+    margin: 0 1.5px 0 1.5px;
+    /* background-color: white; */
+    font-size: 18px;
+}
+.BackF-content div:nth-child(1){
+    width: 120px;
+}
+.BackF-content div:nth-child(2){
+    width: 120px;
+}
+.BackF-content div:nth-child(3){
+    width: 120px;
+}
+.BackF-content div:nth-child(3) img{
+    width: 30px;
+    border-radius: 4px;
+}
+.BackF-content div:nth-child(4){
+    width: 120px;
+}
+.BackF-content div:nth-child(5){
+    width: 120px;
+}
+.BackF-content div:nth-child(6){
+    width: 120px;
+}
+
+.BackF-content div:nth-child(7){
+    width: 180px;
+}
+.BackF-content div:nth-child(8){
+    width: 180px;
+}
+.BackF-content div:nth-child(9){
+    width: 120px;
+
+    display: flex;
+    justify-content: center;
+}
+.BackF-content div:nth-child(9) button{
+    margin: 0 8px;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.851);
+    box-shadow:  0 0 1px 0 white;
+    border: 0px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BackF-content div:nth-child(9) button img{
+   width: 16px;
+}
+
+/* BackF 创建标签窗口 */
+#IcoCreate{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+}
+#IcoCreates{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */ 
+}
+#IcoCreateBox{
+    position: absolute;
+    background-color: rgb(4, 4, 4);
+    margin-top: -60px;
+    width: 520px;
+    height: 600px;
+    border-radius: 12px;
+    box-shadow:  0 0 2px 0 rgba(255, 255, 255, 0.671);
+    padding: 20px 26px;
+}
+#IcoCreateBox>div:nth-child(1)>a:nth-child(1){
+    font-size: 17px;
+    font-weight: bolder;
+}
+#IcoCreateBox>div:nth-child(1)>a:nth-child(2){
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+#IcoCreateBox>div:nth-child(2)>div:nth-child(4) select{
+    width: 300px;
+    height: 28px;
+    border-radius: 8px;
+    background-color: rgb(4, 4, 4);
+    color: white;
+    border: 0px;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.652);
+    padding: 0 10px;
+    scrollbar-color: #ffffff88 rgb(0, 0, 0)
+}
+
+#IcoCreateBox>div:nth-child(2) >div:nth-child(1){
+    margin-top: 30px;
+}
+#IcoCreateBox>div:nth-child(2)>div:nth-child(3)
+{
+    margin-top: 30px;
+}
+#IcoCreateBox>div:nth-child(2)>div:nth-child(5){
+    margin-top: 30px;
+    font-size: 15px;
+}
+#IcoCreateBox>div:nth-child(2) a{
+    font-size: 15px;
+}
+#IcoCreateBox>div:nth-child(2) input{
+    width: 500px;
+    padding: 0 10px;
+    border-radius: 8px;
+    height: 32px;
+    color: white;
+    background-color: rgb(4, 4, 4);
+    border: 0px;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.652);
+}
+
+#IcoCreateBox>div:nth-child(2) textarea{
+    margin-top: 10px;
+    resize: none;
+    width: 500px;
+    padding: 10px;
+    height: 80px;
+    font-size: 15px;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.652);
+}
+#IcoCreateBox>div:nth-child(2)>div:nth-child(6) button {
+    margin-top: 5px;
+    padding: 10px 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    border: 0px;
+    border-radius: 12px;
+}
+
+#IcoCreateBox>div:nth-child(2)>div:nth-child(7) button{
+    margin-top: 100px;
+    padding: 10px 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    border: 0px;
+    border-radius: 12px;
+    float: right;
+}
+#IcoCreateBox>div:nth-child(2) div button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+}
+
+/* 左侧导航栏位 */
+#LeftNavt {
+    /* position: absolute; */
+    position: fixed;
+    left: 0;
+    width: 135px;
+    height: 100%;
+    transition: all 0.4s;
+    z-index: 250;
+}
+
+/* 内置box */
+#LeftNavts {
+    visibility: hidden;
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    left: 0;
+    background-color: rgba(32, 32, 32, 0.598);
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.733);
+    backdrop-filter: blur(3px);
+    transform: translateX(-100%); 
+    /* 初始状态：向左偏移隐藏 */
+    transition: transform 0.5s ease, visibility 0.5s ease, background-color 0.5s ease; 
+    /* 添加过渡效果 */
+}
+
+#LeftNavt:hover #LeftNavts {
+    visibility: visible;
+    transform: translateX(0); 
+    /* 鼠标悬停时：向右偏移显示 */
+    background-color: rgba(0, 0, 0, 0.598); /* 保持背景颜色不变 */
+}
+
+#LeftNavt:not(:hover) #LeftNavts {
+    visibility: hidden;
+    transform: translateX(-100%); 
+    /* 鼠标取消悬停时：向左偏移隐藏 */
+    background-color: transparent; /* 设置背景颜色为透明 */
+}
+
+#LeftNavts>div{
+    cursor: pointer;
+    margin-top: 60px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#LeftNavts>div img{
+    background-color: white;
+    border-radius: 8px;
+    width: 40px;
+    
+}
+#LeftNavts>div span{
+    margin: 0 5px;
+    color: white;
+    writing-mode: vertical-rl; /* 从上到下的竖排显示 */
+    /* text-orientation: upright;  文字方向为正立 */
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#LeftNavts ul {
+    text-align: center;
+    width: 100%;
+    padding: 120px 0;
+}
+
+#LeftNavts ul li {
+    width: 100%;
+    margin: 13px 0;
+    height: 40px;
+    position: relative; /* 添加相对定位，使伪元素定位相对于<li>元素 */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#LeftNavts ul li a {
+    cursor: pointer;
+    padding: 8px 5px;
+    width: 80px;
+    color: rgba(255, 255, 255, 0.811);
+    font-size: 17px;
+    font-weight: 800;
+    transition: all 0.3s;
+    
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    position: relative; /* 添加相对定位,使::before伪元素可以正确定位 */
+}
+
+#LeftNavts ul li:hover a {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 800;
+    transition: all 0.3s;
+
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 12px;
+}
+
+#LeftNavts ul li:hover a::before {
+    content: "✦";
+    position: absolute;
+    left: -7px;
+    top: 1px;
+    color: brown;
+    font-size: 22px;
+    
+}
+
+
+#LeftNavts ul {
+    list-style-type: none;
+    /* padding: 0 */
+  }
+  
+#LeftNavts ul li a.active {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 800;
+    transition: all 0.3s;
+
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* 头像 */
+#portrait{
+    width: 56px;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+/* 名称 */
+#EPK{
+    display: none;
+    position: absolute;
+    writing-mode: vertical-lr;   /* 上到下竖排显示 */
+    text-orientation: upright; /* 朝向为正常方向 */
+    
+}
+/* 触控显示 */
+#P-EPK:hover #EPK{
+    display: block;
+}
+
+/* 顶部导航栏 */
+#BackHeadBox{
+    /* position: absolute; */
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.827);
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.593);
+    z-index: 249;
+    
+}
+#BackHeadBox>div{
+    float: right;
+    margin: 10px 40px 0 0 ;
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgba(255, 255, 255, 0.532);
+    border-radius: 12px;
+}
+#BackHeadBox>div img{
+    cursor: pointer;
+    border-radius: 12px;
+    width: 88%;
+    height: 88%;
+}
+
+#BackHeadBox>div ul{
+    display: none;
+    position: absolute;
+    width: 80px;
+    margin-top: 205px;
+    margin-right: 30px;
+    padding: 5px 0px;
+
+    border-radius: 10px;  
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+}
+
+#BackHeadBox>div ul li{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin: 8px 0;
+
+    padding: 4px 0;
+    background-color: white;
+    border-radius: 16px;
+}
+#BackHeadBox>div ul li:hover{
+    background-color: rgba(255, 255, 255, 0.648);
+}
+
+#BackHeadBox>div ul li:nth-child(1){
+    font-weight: bolder;
+    font-size: 14px;
+}
+#BackHeadBox>div ul li:nth-child(2){
+    font-size: 14px;
+}
+#BackHeadBox>div ul li:nth-child(3){
+    font-size: 14px;
+}
+
